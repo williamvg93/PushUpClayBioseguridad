@@ -1,0 +1,6 @@
+@ApiClayBiosecurity_HostAddress = http://localhost:5111
+
+GET {{ApiClayBiosecurity_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
