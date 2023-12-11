@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS person (
     id INT AUTO_INCREMENT NOT NULL,
     idperson VARCHAR(15) NOT NULL UNIQUE,
     name VARCHAR(50) NOT NULL,
-    creationDate DATE NOT NULL,
+    creationDate DATETIME NOT NULL,
     fkIdPersonType INT NOT NULL,
     fkIdPersonCate INT NOT NULL,
     fkIdTown INT NOT NULL,
@@ -112,8 +112,8 @@ CREATE TABLE IF NOT EXISTS personContact (
 -- contract Table
 CREATE TABLE IF NOT EXISTS contract (
     id INT AUTO_INCREMENT NOT NULL,
-    contractStartDate DATE NOT NULL,
-    contractEndDate DATE NOT NULL,
+    contractStartDate DATETIME NOT NULL,
+    contractEndDate DATETIME NOT NULL,
     fkIdClient INT NOT NULL,
     fkIdEmployee INT NOT NULL,
     fkIdContractStatus INT NOT NULL,

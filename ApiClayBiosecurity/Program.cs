@@ -38,9 +38,13 @@ app.MapGet("/weatherforecast", () =>
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+record WeatherForecast(DateOnly Date, int TemperatureC, string Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
 
 
+
+/* dotnet ef dbcontext scaffold "server=localhost;user=root;password=campus2024;database=claybiosecurity" Pomelo.EntityFrameworkCore.MySql -s ApiClayBiosecurity -p Domain --context ApiClayBioSecurutyContext --context-dir Data --output-dir Entities */
+
+/* dotnet ef dbcontext scaffold "server=localhost;user=camper;password=campus2024;database=claybiosecurity" MySql.EntityFrameworkCore -p Domain -o Entities */
