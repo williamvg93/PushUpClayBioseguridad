@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Domain.Entities;
+using Domain.Entities.Company;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.Data.Config;
+namespace Persistence.Data.Config.Company;
 
 public class WorkshiftConfig : IEntityTypeConfiguration<Workshift>
 {

@@ -1,8 +1,8 @@
-using Domain.Entities;
+using Domain.Entities.Location;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.Data.Config;
+namespace Persistence.Data.Config.Location;
 
 public class AddressConfig : IEntityTypeConfiguration<Address>
 {

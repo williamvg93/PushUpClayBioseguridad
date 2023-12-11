@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
-using Domain.Entities;
+﻿using System.Reflection;
+using Domain.Entities.Company;
+using Domain.Entities.Location;
+using Domain.Entities.PersonF;
 using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Data;

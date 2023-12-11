@@ -1,16 +1,16 @@
-using Domain.Entities;
+using Domain.Entities.PersonF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.Data.Config;
+namespace Persistence.Data.Config.PersonF;
 
-public class AddresstypeConfig : IEntityTypeConfiguration<Addresstype>
+public class ContacttypeConfig : IEntityTypeConfiguration<Contacttype>
 {
-    public void Configure(EntityTypeBuilder<Addresstype> builder)
+    public void Configure(EntityTypeBuilder<Contacttype> builder)
     {
         builder.HasKey(e => e.Id).HasName("PRIMARY");
 
-        builder.ToTable("addresstype");
+        builder.ToTable("contacttype");
 
         builder.Property(e => e.Id).HasColumnName("id");
         builder.Property(e => e.Description)
@@ -20,4 +20,3 @@ public class AddresstypeConfig : IEntityTypeConfiguration<Addresstype>
 
     }
 }
-

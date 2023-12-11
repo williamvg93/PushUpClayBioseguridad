@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities.PersonF;
 
 namespace Domain.Entities.Location;
 

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities.Company;
 
-namespace Domain.Entities;
+namespace Domain.Entities.PersonF;
 
 public partial class Contract : BaseEntity
 {

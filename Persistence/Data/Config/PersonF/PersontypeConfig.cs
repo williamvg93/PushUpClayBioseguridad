@@ -1,20 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Domain.Entities;
+using Domain.Entities.PersonF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Persistence.Data.Config;
+namespace Persistence.Data.Config.PersonF;
 
-public class PersoncategoryConfig : IEntityTypeConfiguration<Personcategory>
+public class PersontypeConfig : IEntityTypeConfiguration<Persontype>
 {
-    public void Configure(EntityTypeBuilder<Personcategory> builder)
+    public void Configure(EntityTypeBuilder<Persontype> builder)
     {
         builder.HasKey(e => e.Id).HasName("PRIMARY");
 
-        builder.ToTable("personcategory");
+        builder.ToTable("persontype");
 
         builder.Property(e => e.Id).HasColumnName("id");
         builder.Property(e => e.Description)

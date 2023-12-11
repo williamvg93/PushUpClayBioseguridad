@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities.PersonF;
 
-namespace Domain.Entities;
+namespace Domain.Entities.Company;
 
 public partial class Shiftscheduling : BaseEntity
 {

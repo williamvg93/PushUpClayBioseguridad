@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Entities.Company;
+using Domain.Entities.Location;
 
-namespace Domain.Entities;
+namespace Domain.Entities.PersonF;
 
 public partial class Person : BaseEntity
 {

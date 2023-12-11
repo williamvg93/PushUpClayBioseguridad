@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Entities;
+namespace Domain.Entities.PersonF;
 
 public partial class Personcategory : BaseEntity
 {
