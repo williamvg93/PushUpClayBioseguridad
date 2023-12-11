@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace Domain.Entities;
 
-public partial class Workshift
+public partial class Workshift : BaseEntity
 {
-    public int Id { get; set; }
-
     public string Name { get; set; }
 
     public DateTime ShiftStartTime { get; set; }

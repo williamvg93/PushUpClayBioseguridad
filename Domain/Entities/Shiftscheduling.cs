@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace Domain.Entities;
 
-public partial class Shiftscheduling
+public partial class Shiftscheduling : BaseEntity
 {
-    public int Id { get; set; }
-
     public int FkIdContract { get; set; }
 
     public int FkIdPerson { get; set; }
