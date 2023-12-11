@@ -12,4 +12,9 @@ public class PersonRepo : GenericRepository<Person>, IPerson
     {
         _context = context;
     }
+
+    public Task<IEnumerable<Person>> GetAllEmployees()
+    {
+        throw new NotImplementedException();
+    }
 }
