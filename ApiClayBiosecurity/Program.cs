@@ -1,4 +1,5 @@
 using System.Reflection;
+using System.Text.Json.Serialization;
 using ApiClayBiosecurity.Extensions;
 using AspNetCoreRateLimit;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +26,9 @@ builder.Services.ConfigureRatelimiting();
 
 /* Add AutoMApper */
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
+
+builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 // Add JWT
 /* builder.Services.AddJwt(builder.Configuration); */

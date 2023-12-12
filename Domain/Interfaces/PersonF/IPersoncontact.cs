@@ -4,5 +4,4 @@ namespace Domain.Interfaces.PersonF;
 
 public interface IPersoncontact : IGenericRepository<Personcontact>
 {
-
 }

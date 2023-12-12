@@ -3,6 +3,8 @@ using ApiClayBiosecurity.Dtos.Get.Location;
 using ApiClayBiosecurity.Dtos.Get.PersonF;
 using ApiClayBiosecurity.Dtos.Post.Location;
 using ApiClayBiosecurity.Dtos.Post.PersonF;
+using ApiClayBiosecurity.Dtos.Querys;
+using ApiClayBiosecurity.Dtos.Querys.PersonF;
 using AutoMapper;
 using Domain.Entities.Company;
 using Domain.Entities.Location;
@@ -60,6 +62,21 @@ public class MappingProfiles : Profile
         .ReverseMap();
 
         CreateMap<Persontype, PersontypeDto>()
+        .ReverseMap();
+
+
+
+        /* Querys DTOS */
+        CreateMap<Persontype, TypePersonPersonDto>()
+        .ReverseMap();
+
+        CreateMap<Personcategory, CategoryPersonPersonDto>()
+        .ReverseMap();
+
+        CreateMap<Personcontact, VigilantNumberDto>()
+        .ReverseMap();
+
+        CreateMap<Person, VigilantPhoneNumberDto>()
         .ReverseMap();
     }
 }

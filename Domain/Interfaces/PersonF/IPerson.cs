@@ -4,5 +4,5 @@ namespace Domain.Interfaces.PersonF;
 
 public interface IPerson : IGenericRepository<Person>
 {
-    Task<IEnumerable<Person>> GetAllEmployees();
+    Task<IEnumerable<Person>> GetPhoneNumbersVigilant(int id);
 }

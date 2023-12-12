@@ -1,5 +1,6 @@
 using Domain.Entities.PersonF;
 using Domain.Interfaces.PersonF;
+using Microsoft.EntityFrameworkCore;
 using Persistence.Data;
 
 namespace Application.Repository.PersonF;
@@ -13,8 +14,11 @@ public class PersonRepo : GenericRepository<Person>, IPerson
         _context = context;
     }
 
-    public Task<IEnumerable<Person>> GetAllEmployees()
+    public async Task<IEnumerable<Person>> GetPhoneNumbersVigilant(int id)
     {
-        throw new NotImplementedException();
+        return await _context.People
+        .Where(p => p.Id == id)
+        .Include(p => p.Personcontacts)
+        .ToListAsync();
     }
 }
